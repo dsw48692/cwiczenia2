@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$1" == "--logs" ]]; then
+if [[ "$1" == "--logs" || "$1" == "-l" ]]; then
   for i in {1..100}
   do
     filename="log${i}.txt"
@@ -9,6 +9,6 @@ if [[ "$1" == "--logs" ]]; then
     echo "Data: $(date +%Y-%m-%d)" >> $filename
   done
 else
-  echo "Sposób użycia: $0 --logs"
+  echo "Sposób użycia: $0 --logs|-l"
 fi
 
