@@ -1,3 +1,3 @@
 #!/bin/bash
-ls --help -h
-
+ls --help -d
+#
